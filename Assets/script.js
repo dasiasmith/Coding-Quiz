@@ -88,6 +88,7 @@ function nextQuestion() {
     questionCounter++;
     var questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
+    console.log(currentQuestion.question);
     question.innerText = currentQuestion.question;
 
     choices.forEach(choice => {
