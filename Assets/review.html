@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Code Quiz</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <!--Header bar to display Highscores and Timer-->
+        <header>
+            <div class="highscoreResults">
+                <a class="scoreButt" href="highscores.html">View Highscores</a>
+            </div>
+            <!--<div class="timer-text">
+                <div class="large-font timer-count"></div>
+                <h3>seconds remaining</h3>    
+                </div>-->
+        </header>
+        <div class="center-left">
+            <h1>All done!</h1>
+            <h3>Your final score is <span id="finalScore"></span></h3>
+            <form>Enter Initials:
+                <input 
+                type="text" 
+                name="initials"
+                id="initials"
+                />
+                <button 
+                type="submit" 
+                class="choice-btn" 
+                id="saveScoreBtn" 
+                onclick="saveHighScore(event)"
+                disabled>
+                Submit
+            </button>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>        

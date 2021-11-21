@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Code Quiz</title>
+</head>
+<body>
+    <header>
+        <div class="highscoreResults">
+            <a class="scoreButt" href="Assets/highscores.html">View Highscores</a>
+        </div>
+        <div class="timer-text">
+        <div class="large-font timer-count">75</div>
+        <h3>seconds remaining</h3>    
+        </div>
+    </header>
+    <div class="center-left">
+        <div id="game">
+            <h2 id="question"><strong>String values must be enclosed within ____ when being assigned to variables.</strong></h2>
+                <p class="choice-btn" data-number="1">Choice 1</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-btn" data-number="2">Choice 2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-btn" data-number="3">Choice 3</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-btn" data-number="4">Choice 4</p>
+            </div>
+            <span id="error"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

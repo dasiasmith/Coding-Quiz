@@ -1,0 +1,64 @@
+:root {
+    --purp: #69205d;
+    --light: #77446f;
+}
+
+.center {
+   margin: 0 auto;
+   width: 50%;
+   text-align: center; 
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+
+    padding: .5rem ;
+    width: 20rem;
+    text-align: center;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: var(--purp);
+}
+
+.scoreButt {
+    text-decoration: none;
+    color: var(--purp);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--light);
+}
+
+/*.btn[disabled]:hover {
+    cursor: not-allowed;
+}*/
+
+.center-left {
+    margin: 0 auto;
+    width: 50%;
+    text-align: left
+}
+
+.choice-btn {
+    display: inline-block;
+    white-space: normal;
+    padding: .5rem;
+    border-radius: .5rem;
+    margin: .2rem;
+    text-decoration: none;
+    color: white;
+    background-color: var(--purp);
+}
+
+.choice-btn:hover {
+    cursor: pointer;
+    background-color: var(--light);
+}
