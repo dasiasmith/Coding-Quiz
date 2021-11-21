@@ -2,6 +2,10 @@ var question = document.getElementById("question");
 var choices = Array.from(document.getElementsByClassName("choice-btn"));
 var timerElement = document.querySelector(".timer-count");
 
+var initials = document.getElementById('initials');
+var saveScoreBtn = document.getElementById('saveScoreBtn');
+var finalScore = document.getElementById('finalScore');
+
 var currentQuestion = {};
 var score = 0;
 var questionCounter = 0;
@@ -62,7 +66,7 @@ function start() {
     availableQuestions = [...questions]; //Using the spread operator gets a full copy of the questions array and allows changes to be made without affecting the og array
     console.log(availableQuestions);
     startTimer();
-    nextQuestion();
+    //nextQuestion();
 };
 
 function startTimer() {
@@ -73,6 +77,7 @@ function startTimer() {
       if (timerCount === 0) {
         // Clears interval
         clearInterval(timer);
+        nextQuestion();
       }
     }, 1000);
   }
@@ -120,19 +125,17 @@ choices.forEach(choice => {
         };
 
         nextQuestion();
-        console.log(score);
+        console.log("test",score);
     });
 });
 
 start();
 localStorage.setItem('mostRecentScore', score);
 
-var initials = document.getElementById('initials');
-var saveScoreBtn = document.getElementById('saveScoreBtn');
-var finalScore = document.getElementById('finalScore');
 
-var mostRecentScore = localStorage.getItem('mostRecentScore')
-finalScore.textContent = mostRecentScore;
+
+var mostRecentScore = localStorage.getItem('mostRecentScore');
+//finalScore.textContent = mostRecentScore;
 
 initials.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !initials.value;
