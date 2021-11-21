@@ -86,7 +86,7 @@ function nextQuestion() {
     if(availableQuestions.length == 0 || questionCounter >= questionNum) {
         //localStorage.setItem('mostRecentScore', score);
         clearInterval(timer);
-        return window.location.assign("file:///C:/Users/Dsmith/Desktop/gt-atl-virt-fsf-pt-10-2021-u-c-b/Class-Content/04-Web-APIs/02-Homework/Assets/review.html");
+        return window.location.href="./review.html";
         //clearInterval(timer);
     }
 
