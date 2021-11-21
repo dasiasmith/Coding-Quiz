@@ -70,7 +70,7 @@ function startTimer() {
     timer = setInterval(function() {
       timerCount--;
       timerElement.textContent = timerCount;
-      if (timerCount === 0 || questionCounter >= 5) {
+      if (timerCount === 0) {
         // Clears interval
         clearInterval(timer);
       }
