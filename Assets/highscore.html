@@ -7,3 +7,20 @@
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
+        <!--Header bar to display Highscores and Timer-->
+        <div class="center">
+            <div id="highScores">
+                <h1 id="finalScore">High Scores</h1>
+                <ul id="highScoresList"></ul>
+                <a class="btn" href="questions.html">Play Again</a>
+                <button
+                    type="submit"
+                    id="clearBtn"
+                    onclick="clearAll(event)">
+                    Clear Highscores
+                </button>
+            </div>
+        </div>
+        <script src="highscores.js"></script>
+    </body>
+

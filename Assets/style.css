@@ -25,6 +25,23 @@
     background-color: var(--purp);
 }
 
+button {
+    padding: .5rem ;
+    width: 20rem;
+    text-align: center;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: var(--purp);
+    border-color: var(--purp);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--light);
+}
+
 .scoreButt {
     text-decoration: none;
     color: var(--purp);
@@ -37,9 +54,9 @@
     background-color: var(--light);
 }
 
-/*.btn[disabled]:hover {
+.btn[disabled]:hover {
     cursor: not-allowed;
-}*/
+}
 
 .center-left {
     margin: 0 auto;
@@ -61,4 +78,22 @@
 .choice-btn:hover {
     cursor: pointer;
     background-color: var(--light);
+}
+
+.timer-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--purp);
+    font-weight: bold;
+    float: left;
+}
+
+#highScoresList {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.high-score {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
