@@ -120,8 +120,8 @@ document.addEventListener("click", function(event) {
 
 //Compares user's click answer option to the correct answer noted in the questions array
 choices.forEach(choice => {
-    choice.addEventListener("click", e => {
-        var selectedChoice = e.target;
+    choice.addEventListener("click", event => {
+        var selectedChoice = event.target;
         var selectedAnswer = selectedChoice.dataset["number"];
         console.log(currentQuestion.answer);
 
@@ -161,9 +161,9 @@ initials.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !initials.value;
 });
 //After event listener is run the default is prevents so that score is stored
-saveHighScore = (e) => {
+saveHighScore = (event) => {
    console.log("clicked the button"); 
-   e.preventDefault();
+   event.preventDefault();
 
 //Formates and object to indicate the score and the inital typed in the form   
    var scoreObj = {

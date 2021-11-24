@@ -1,4 +1,4 @@
-//Similar to what was done on the script.js, sets variable for high scores based on id and parse through the list and returns empty array is list is null
+//Similar to what was done on the script.js, sets variable for high scores based on id and parses through the list and returns empty array if list is empty
 var highScoresList = document.getElementById('highScoresList');
 var highScores = JSON.parse(localStorage.getItem("storedScores")) || [];
 
